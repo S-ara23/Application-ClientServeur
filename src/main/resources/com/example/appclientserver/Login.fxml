@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.appclientserver.Login">
+   <children>
+      <BorderPane prefHeight="402.0" prefWidth="305.0" style="-fx-background-color: #4B0082;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="295.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <ImageView fitHeight="170.0" fitWidth="190.0" pickOnBounds="true" preserveRatio="true" x="60.0" y="40.0" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@log-removebg-preview.png" />
+               </image>
+               <BorderPane.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </BorderPane.margin>
+            </ImageView>
+         </center>
+         <bottom>
+            <Text fill="#fcfafa" strokeType="OUTSIDE" strokeWidth="0.0" text="Les mots sont comme des fils qui tissent notre conversation." wrappingWidth="223.13671875" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="40.0" left="40.0" right="30.0" top="40.0" />
+               </BorderPane.margin>
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Text>
+         </bottom>
+      </BorderPane>
+      <AnchorPane layoutX="295.0" prefHeight="402.0" prefWidth="305.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="295.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TextField fx:id="login" layoutX="84.0" layoutY="155.0" promptText="UserName" style="-fx-background-color: transparent; -fx-border-color: #4B0082; -fx-border-width: 0px 0px 2px;" AnchorPane.bottomAnchor="220.0" AnchorPane.leftAnchor="84.0" AnchorPane.rightAnchor="69.0" AnchorPane.topAnchor="155.0" />
+            <PasswordField fx:id="password" layoutX="84.0" layoutY="225.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #4B0082; -fx-border-width: 0px 0px 2px;" AnchorPane.bottomAnchor="150.0" AnchorPane.leftAnchor="84.0" AnchorPane.rightAnchor="69.0" AnchorPane.topAnchor="225.0" />
+            <Button fx:id="LoginButton" layoutX="118.0" layoutY="307.0" mnemonicParsing="false" onAction="#onButtonClickSB" prefHeight="30.0" prefWidth="85.0" style="-fx-background-color: #4B0082;" text="Login" textFill="#fff9f9" AnchorPane.bottomAnchor="65.0" AnchorPane.leftAnchor="118.0" AnchorPane.rightAnchor="102.0" AnchorPane.topAnchor="307.0">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Hyperlink layoutX="236.0" layoutY="359.0" onAction="#ONHyperLink" text="Sign Up" textFill="INDIGO" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="236.0" AnchorPane.rightAnchor="16.0" AnchorPane.topAnchor="359.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Hyperlink>
+            <Text fill="DARKORCHID" layoutX="96.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Login" AnchorPane.topAnchor="100.1015625">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="87.0" fitWidth="100.0" layoutX="109.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="301.0" AnchorPane.leftAnchor="109.0" AnchorPane.rightAnchor="109.0" AnchorPane.topAnchor="14.0">
+               <image>
+                  <Image url="@user-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="36.0" layoutX="46.0" layoutY="157.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="220.0" AnchorPane.leftAnchor="46.0" AnchorPane.rightAnchor="234.0" AnchorPane.topAnchor="157.0">
+               <image>
+                  <Image url="@email-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="27.0" fitWidth="23.0" layoutX="47.0" layoutY="231.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="144.96703338623047" AnchorPane.leftAnchor="47.0" AnchorPane.rightAnchor="235.0" AnchorPane.topAnchor="231.0">
+               <image>
+                  <Image url="@password.PNG" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
